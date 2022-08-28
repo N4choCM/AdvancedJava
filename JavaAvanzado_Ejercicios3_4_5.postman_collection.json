@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "d7208041-b446-4209-9ee6-6e1b069558c2",
+		"name": "JavaAvanzado_Ejercicios3_4_5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22117131"
+	},
+	"item": [
+		{
+			"name": "Bootcampers",
+			"item": [
+				{
+					"name": "/bootcampers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/bootcampers",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"bootcampers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bootcampers/{nombre}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/bootcampers/uno",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"bootcampers",
+								"uno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bootcampers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"cinco\",\r\n        \"valor\": 0.777777777\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9000/bootcampers",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"bootcampers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reqres.in",
+			"item": [
+				{
+					"name": "/api/users?page={PAGE_NUMBER)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users?page=2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users/{ID}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users/1",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nacho\",\r\n    \"job\": \"Teacher\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/users",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
